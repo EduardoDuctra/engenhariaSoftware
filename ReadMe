@@ -22,13 +22,24 @@
 
 
 ```mermaid
-flowchart TD
-   entra(["entra na página inicial"])
-   login(["realiza login"])
-   filtra(["filtra alunos"])
-   mostra(["mostra alunos"])
+flowchart  TD
 
-   entra --> login
-   
-   filtra -.-> mostra
-```
+subgraph  software["Software"]
+
+filtrar["Filtrar os dados de acordo com o nível do usuário"]
+
+mostrar["Mostra os cursos que o usuário tem acesso em tabela"]
+
+mostrarB["Lista os nomes dos alunos matriculados no curso e uma tabela com alunos com média inferior a 7"]
+
+mostrarC["Lista os dados do aluno: notas e faltas das disciplinas"]
+
+end
+
+adm["Administrador"]  -->  filtrar
+
+coordenador["Coordenador de Curso"]  -->  filtrar
+
+coordenadorCentro["Coordenador de Centro"]  -->  filtrar
+
+filtrar  -.->  mostrar  &  mostrarB  &  mostrarC
