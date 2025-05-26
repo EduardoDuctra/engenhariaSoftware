@@ -6,12 +6,21 @@
 ## Histórias de usuário (casos de uso)
 
 1. Entra na página inicial e vai para página Login
-2. Entra no site inicial
+2. Entra na página de login
 3. Informa e-mail e senha e clica no botão login
 4. Entra na página do usuário (página principal). Mostra os cursos que o usuário tem acesso em tabela
 5. Clica no curso e vai para a página com uma lista e o nome dos alunos matriculados no curso. Da para filtrar por ano. Uma tabela com o % de alunos com média menor que 7.0
 6. Clica no aluno e vai para uma página com dados dele e notas das disciplinas, faltas tbm
 
+## Custos
+1. Página Inicial:
+2. Página de Login:
+3. Página Principal do Usuário:
+4. Página do Curso:
+5. Página do Aluno: 
+
+
+   
 ## Diagramas
 
 ```mermaid
