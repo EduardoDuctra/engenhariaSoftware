@@ -13,11 +13,11 @@
 6. Clica no aluno e vai para uma página com dados dele e notas das disciplinas, faltas tbm
 
 ## Custos
-1. Página Inicial: 4
-2. Página de Login:
-3. Página Principal do Usuário:
-4. Página do Curso:
-5. Página do Aluno: 
+1. Página Inicial: 3h
+2. Página de Login: 3h
+3. Página Principal do Usuário: 3,5h
+4. Página do Curso: 5h
+5. Página do Aluno: 5h
 
 
    
