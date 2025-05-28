@@ -13,7 +13,7 @@
 6. Clica no aluno e vai para uma página com dados dele e notas das disciplinas, faltas tbm
 
 ## Custos
-1. Página Inicial:
+1. Página Inicial: 4
 2. Página de Login:
 3. Página Principal do Usuário:
 4. Página do Curso:
