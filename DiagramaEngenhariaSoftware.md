@@ -12,7 +12,7 @@
 5. Clica no curso e vai para a página com uma lista e o nome dos alunos matriculados no curso. Da para filtrar por ano. Uma tabela com o % de alunos com média menor que 7.0
 6. Clica no aluno e vai para uma página com dados dele e notas das disciplinas, faltas tbm
 
-   # Após reunião do grupo em 29 de Maio
+   ### Após reunião do grupo em 29 de Maio
 
 1. Entra na página inicial e vai para página Login
 2. Na página de login informa e-mail e senha e clica no botão login. Usuário tipo coordenador de curso
