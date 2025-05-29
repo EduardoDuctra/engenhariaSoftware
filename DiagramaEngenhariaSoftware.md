@@ -27,7 +27,7 @@
 4. Página do Curso: 5h
 5. Página do Aluno: 5h
 
-   # Após reunião do grupo em 29 de Maio
+   ### Após reunião do grupo em 29 de Maio
    1. Página Inicial: 3h
    2. Página de Login: 3h
    3. Página Principal do Usuário: 6h
