@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Probabilidade de Evasão - UFSM</title>
+    <link rel="stylesheet" href="css/estilo_paginaAluno.css" />
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo do Projeto" id="logo" />
+      </div>
+      <div class="user-info">
+        <p id="welcome-message">Bem-Vindo, !</p>
+        <a href="#" onclick="logout()">Sair</a>
+        <div class="profile-icon">
+          <img src="assets/user-svgrepo-com.svg" alt="Ícone do Usuário" />
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <h2>Sistemas para Internet</h2>
+
+        <div class="search-section">
+          <button
+            class="arrow-btn"
+            onclick="window.location.href='paginaCurso.html'"
+          >
+            <img src="assets/back-svgrepo-com.svg" alt="Voltar" />
+          </button>
+
+          <form onsubmit="buscarAluno(); return false;" class="search-form">
+            <input
+              type="text"
+              id="busca_aluno"
+              placeholder="Nome ou Matrícula do Aluno"
+            />
+            <button type="submit" class="arrow-btn">
+              <img
+                src="assets/search-svgrepo-com.svg"
+                alt="Ícone de Pesquisa"
+              />
+            </button>
+          </form>
+        </div>
+
+        <h3>Probabilidade de evasão</h3>
+
+        <div id="grafico" class="grafico-placeholder">
+          <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

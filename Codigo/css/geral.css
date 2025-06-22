@@ -1,0 +1,251 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Cor de fundo similar à borda da imagem */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Centraliza o conteúdo principal na página */
+    justify-content: center; /* Centraliza o conteúdo principal na página */
+}
+
+header {
+    width: 100%;
+    padding: 20px 5%; /* Adiciona algum padding nas laterais */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    position: absolute; /* Para o logo ficar no topo */
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    height: 90px; /* Ajuste a altura conforme necessário */
+}
+
+.container-principal {
+    display: flex;
+    width: 80%; /* Largura do container principal */
+    max-width: 1200px; /* Largura máxima */
+    background-color: #94BDF2; /* Azul claro similar ao da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Garante que o conteúdo não transborde as bordas arredondadas */
+    margin-top: 80px; /* Espaço para o header */
+    min-height: 700px;
+}
+
+.coluna-texto {
+    flex: 1; /* Ocupa metade do espaço */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    color: #303F5A; /* Cor do texto similar à imagem */
+}
+
+.coluna-texto h1 {
+    font-size: 2em; /* Tamanho do título */
+    margin-bottom: 20px;
+    font: bold;
+}
+
+.coluna-texto h2 {
+    font-size: 1em; /* Tamanho do título */
+    margin-bottom: 2px;
+}
+
+.coluna-texto p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botao-login {
+    background-color: #2B367D; /* Cor do botão similar à imagem */
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Alinha o botão à esquerda */
+    text-decoration: none;
+}
+
+.botao-login:hover {
+    background-color: #3A4C70; /* Cor do botão ao passar o mouse */
+}
+
+.coluna-imagem {
+    flex: 1; /* Ocupa a outra metade do espaço */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94BDF2; /* Um fundo levemente diferente para a imagem, se desejado */
+    padding: 20px; /* Espaçamento interno para a imagem não colar nas bordas */
+}
+
+.coluna-imagem img {
+    max-width: 600px;
+    max-height: 350; /* Ajuste conforme a altura da sua imagem */
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas para a imagem, se desejado */
+}
+
+#logo {
+    height: 90px; /* Ajuste a altura conforme necessário */
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column; /* Empilha as colunas */
+        width: 90%;
+        margin-top: 100px; /* Ajuste para o logo */
+    }
+
+    .coluna-texto {
+        order: 2; /* Texto abaixo da imagem em telas pequenas */
+        padding: 30px;
+    }
+
+    .coluna-imagem {
+        order: 1; /* Imagem acima do texto */
+        padding: 20px; /* Menor padding em telas pequenas */
+    }
+
+    .coluna-imagem img {
+        max-height: 300px; /* Ajuste a altura da imagem para telas menores */
+    }
+
+    .botao-login {
+        align-self: center; /* Centraliza o botão em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .coluna-texto h1 {
+        font-size: 1.5em;
+    }
+    .coluna-texto p {
+        font-size: 0.8em;
+    }
+    .botao-login {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    #logo {
+        height: 40px; /* Logo menor em telas muito pequenas */
+    }
+    header {
+        padding: 15px 5%;
+    }
+    .container-principal {
+        margin-top: 80px;
+    }
+}
+
+
+.coluna-login {
+    flex:1;
+    padding: 40px;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    color: #303F5A; /* Cor do texto similar à imagem */
+    align-items: center;
+}
+
+
+.login-container {
+    background-color: #f4f6fc; /* Cor de fundo do container do login */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #303f9f; /* Azul escuro para o título LOGIN */
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #303f9f; /* Azul escuro para os labels */
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #303f9f; /* Borda azul escura para os inputs */
+    border-radius: 20px; /* Bordas arredondadas para os inputs */
+    box-sizing: border-box; /* Para incluir padding e border na largura total */
+    font-size: 16px;
+    background-color: #fff; /* Fundo branco para os inputs */
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #5c6bc0; /* Azul um pouco mais claro no foco */
+}
+
+.forgot-password {
+    display: block;
+    color: #757575; /* Cinza para o link "Esqueci minha senha" */
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: -10px; /* Ajuste para aproximar do campo de senha */
+    margin-bottom: 25px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: #303f9f; /* Azul escuro para o botão */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas para o botão */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #3f51b5; /* Azul um pouco mais claro no hover */
+}
+
+.voltar{
+    padding: auto;
+    color: #303f9f;
+    display: block;
+    margin-top: 10px;
+}
+
+.voltar:hover{
+    padding: auto;
+    color: #4357d4;
+    display: block;
+    margin-top: 10px;
+}
