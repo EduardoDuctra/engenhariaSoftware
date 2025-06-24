@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!usuarioLogado) {
     alert("Você precisa estar logado para acessar esta página.");
-    window.location.href = "index.html"; // tem que trocar !!!!!!!!!!!!
+    window.location.href = "index.html";
     return;
   }
 
@@ -125,5 +125,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function logout() {
   sessionStorage.removeItem("usuarioLogado");
-  window.location.href = "index.html"; // tem que trocar !!!!!!!!!!!!
+  window.location.href = "index.html";
 }

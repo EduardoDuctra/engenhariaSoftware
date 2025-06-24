@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   usuarioLogado = JSON.parse(sessionStorage.getItem("usuarioLogado"));
   if (!usuarioLogado) {
     alert("Você precisa estar logado para acessar esta página.");
-    window.location.href = "index.html"; // tem que trocar !!!!!!!!!!!!
+    window.location.href = "index.html";
     return;
   }
 
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Carrega o JSON com os dados do aluno (continua igual, pois os alunos não vêm da sessão)
 fetch("dadosAlunos.json")
   .then((response) => response.json())
   .then((data) => {
@@ -103,5 +102,5 @@ function atualizarGrafico(aluno) {
 
 function logout() {
   sessionStorage.removeItem("usuarioLogado");
-  window.location.href = "index.html"; // tem que trocar !!!!!!!!!!!!
+  window.location.href = "index.html";
 }
